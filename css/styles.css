@@ -1,0 +1,177 @@
+/*
+ * HOMEPAGE STYLES
+ *
+ * @project     Wakey Wakey Eggs & Bacey Alarm Clock
+ * @section     desktop
+ * @date        2013-07-09
+ * @author      Lynn Maharas
+ *
+ */
+
+/*
+ * DEFAULT
+ */
+ 
+body {
+	width: 100%;
+	height: 100%; 
+}
+
+a {
+	color: #000;
+}
+
+.wrapper {
+	width: 50%;
+	height: 50%;
+	margin: 84px auto;
+	text-align: center;
+}
+ 
+
+/*
+ * CLOCK
+ */
+.clock-wrapper {
+	width: 300px;
+	height: 345px;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+}
+ 
+.clock {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+ 	font-size: 42px;
+ 	width: 300px;
+ 	height: 300px;
+ 	padding: 20px;
+ 	margin: 0 auto;
+ 	text-align: center;
+ 	background-color: #ffcd00;
+ 	behavior: url('css/thirdparty/PIE-1.0.0/PIE.htc');
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;  
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+    -webkit-transition: all .2s ease-in-out;
+       -moz-transition: all .2s ease-in-out;
+         -o-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;      
+}
+
+.clock p {
+	z-index: 10;
+}
+
+.icon-sun {
+	font-size: 426px;
+	top: -73px;
+	left: -65px;
+	position: absolute;
+	color: #FFCD00;
+	z-index: -10;
+}
+
+/* set alarm */
+.set-alarm,
+.snooze,
+.wake {
+ 	width: 100px;
+ 	padding: 10px 20px;
+ 	margin: 0 auto;
+ 	background-color: #ccc;
+ 	behavior: url('css/thirdparty/PIE-1.0.0/PIE.htc');
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+   cursor: pointer;
+   margin-top: 50px;
+}
+
+.set-alarm:hover,
+.snooze:hover,
+.wake:hover {
+ 	background-color: #999;	
+}
+
+.snooze {
+	display: none;
+}
+
+.snooze .icon-moon-fill {
+	margin-left: 10px;
+}
+
+
+/*overlay*/
+.overlay,
+.info {
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.overlay {
+	position: fixed;
+	z-index: 120;
+	background-color: #fff;
+	background-color: rgba(255,255,255,0.9);  
+}
+
+/* info */
+.info {
+	display: block;
+	margin: 50px auto;
+	height: 300px;
+	width: 380px;
+	text-align: center;
+	z-index: 110;
+    -webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.info .close {
+	float: right;
+	height: 26px;
+	font-size: 26px;
+	display: block;
+	position: relative;
+	top: -18px;
+}
+
+.info a {
+    -webkit-transition: color .2s ease-in-out;
+       -moz-transition: color .2s ease-in-out;
+         -o-transition: color .2s ease-in-out;
+            transition: color .2s ease-in-out;
+}
+
+.info a:hover {
+	color: #ee3224;
+    -webkit-transition: color .2s ease-in-out;
+       -moz-transition: color .2s ease-in-out;
+         -o-transition: color .2s ease-in-out;
+            transition: color .2s ease-in-out;
+}
+
+.info .main {
+	clear: both;
+	margin-bottom: 10px;
+}
+
+.info .alarm-on {
+	display: none;
+	font-size: 50px;
+}
